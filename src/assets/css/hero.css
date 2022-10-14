@@ -1,0 +1,16 @@
+#hero{
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1024px){
+    #hero{
+        height: 60vh;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    #hero{
+        height: 100vh;
+    }
+}

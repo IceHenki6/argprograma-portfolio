@@ -1,0 +1,19 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #1E2E40;
+    --main-font-color: #e3e4e8;
+}
+
+#my-navbar{
+    box-shadow: 0px 5px 8px -7px #413ccc;
+}
+
+#styled-break{
+    height: 10px;
+    width: 77px;
+    border-radius: 10px;
+}
+
