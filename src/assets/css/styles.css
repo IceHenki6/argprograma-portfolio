@@ -17,3 +17,15 @@
     border-radius: 10px;
 }
 
+#skills{
+    background-color: #12253b;
+}
+
+#about-me{
+    height: 55vh;
+}
+
+.skills-list li::marker{
+    color: #144883;
+    font-size: 1.4em;
+}
