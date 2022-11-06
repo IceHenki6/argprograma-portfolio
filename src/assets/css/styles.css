@@ -59,6 +59,41 @@
     height: 250px;
 }
 
+
+#academic-formation{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.education-card{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    width: 40%;
+}
+
+.education-img{
+    width: 60px;
+}
+
+.education-title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
 @media only screen and (max-width: 1024px){
     .project-img{
         height: 170px;
@@ -70,3 +105,4 @@
         height: 240px;
     }
 }
+
