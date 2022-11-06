@@ -3,22 +3,46 @@
 }
 
 :root{
-    --main-color: #1E2E40;
+    --main-color: #ab83e3;
     --main-font-color: #e3e4e8;
 }
 
-#my-navbar{
-    box-shadow: 0px 5px 8px -7px #413ccc;
+.hidden{
+    display: none !important;
 }
+
+
+#navbar i, #navbar-on-scroll i{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+#navbar-on-scroll{
+    box-shadow: 0px 5px 8px -7px #715597;
+}
+
+#projects-btn{
+    background-color: var(--main-color);
+}
+
 
 #styled-break{
     height: 10px;
     width: 77px;
     border-radius: 10px;
+    background-color: var(--main-color);
 }
 
 #skills{
-    background-color: #12253b;
+    background-color: var(--main-color);
+}
+
+#skills .card{
+    background-color: rgb(54, 53, 53);
+}
+
+#skills i{
+    color: var(--main-color);
 }
 
 #about-me{
@@ -26,7 +50,7 @@
 }
 
 .skills-list li::marker{
-    color: #144883;
+    color: var(--main-color);
     font-size: 1.4em;
 }
 

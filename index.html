@@ -10,11 +10,40 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <title>Federico Maximovicz</title>
   </head>
-  <body class="bg-dark" id="body">
+  <body class="bg-light" id="body">
     <header>
-      <nav id="my-navbar" class="navbar navbar-dark text-light bg-dark navbar-expand-lg py-4 fixed-top">
+      <nav id="navbar" class="navbar navbar-light text-dark bg-transparent navbar-expand-lg py-4">
         <div class="container">
-          <a class="navbar-brand" href="#">Federico Maximovicz</a>
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-code-slash"></i>
+            Federico Maximovicz</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Certifications</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav id="navbar-on-scroll" class="hidden navbar navbar-light text-dark bg-light navbar-expand-lg py-4 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-code-slash"></i>
+            Federico Maximovicz</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,41 +67,41 @@
       </nav>
     </header>
     <main>
-      <section id="hero" class="bg-dark text-light p-sm-5 d-flex justify-content-between align-items-center">
+      <section id="hero" class="bg-light text-dark p-sm-5 d-flex justify-content-between align-items-center">
         <div class="container">
           <div class="d-sm-flex">
             <div class="align-self-center">
               <h1>Hello, I'm Federico Maximovicz</h1>
               <p>I'm a junior software developer who is passionate about technology and learning. I'm looking for an opportunity to gain experience in the industry.</p>
 
-              <button class="btn btn-primary">My Projects</button>
+              <button id="projects-btn" class="btn">My Projects</button>
             </div>
 
-            <img class="img-fluid w-50 d-none d-sm-block" src="src/assets/images/undraw_programming_re_kg9v.svg" alt="">
+            <img class="img-fluid w-50 d-none d-sm-block" src="src/assets/images/undraw_developer_activity_re_39tg.svg" alt="">
           </div>
         </div>
       </section>
 
       <div class="container py-5 py-sm-0">
-        <div id="styled-break" class="bg-primary"></div>
+        <div id="styled-break"></div>
       </div>
 
-      <section id="about-me" class="bg-dark text-light py-sm-5 p-sm-5 d-flex justify-content-center align-items-center">
+      <section id="about-me" class="bg-light text-dark py-sm-5 p-sm-5 d-flex justify-content-center align-items-center">
         <div class="container">
           <h1 class="text-center">About Me</h1>
           <p class="py-3">I was born in Misiones, Argentina. Since I was a kid, I have shown a great interest in technology and computers. A few years ago, I started learning how to program to become a developer. In 2022 I joined the Oracle Next Education Bootcamp, which helped me to develop my skills to become a full-stack web developer. I'm a person with self-initiative and motivation who's constantly learning to become a better professional.</p>
         </div>
       </section>
 
-      <section id="skills" class="text-light py-sm-5 p-sm-5">
+      <section id="skills" class="bg-indigo-200 text-light py-sm-5 p-sm-5">
         <div class="container">
-          <h1 class="text-center py-5 text-primary">Skills</h1>
+          <h1 class="text-center py-5 text-dark">Skills</h1>
           <div class="row g-3 text-center">
             <div class="col-md d-flex align-items-stretch mb-4">
-              <div class="card bg-dark text-light w-100 py-4">
+              <div class="card text-light w-100 py-4">
                 <div class="card-body text-center">
                   <div class="h1 mb-4">
-                    <i class="bi bi-laptop text-primary"></i>
+                    <i class="bi bi-laptop"></i>
                   </div>
                   <h4 class="card-title mb-4">Front-End Web Development</h4>
                   <ul class="skills-list text-start">
@@ -85,10 +114,10 @@
               </div>
             </div>
             <div class="col-md d-flex align-items-stretch mb-4">
-              <div class="card bg-dark text-light w-100 py-4">
+              <div class="card text-light w-100 py-4">
                 <div class="card-body text-center">
                   <div class="h1 mb-4">
-                    <i class="bi bi-hdd-stack text-primary"></i>
+                    <i class="bi bi-hdd-stack"></i>
                   </div>
                   <h4 class="card-title mb-4">Back-End Web Development</h4>
                   <ul class="skills-list text-start">
@@ -100,10 +129,10 @@
               </div>
             </div>
             <div class="col-md d-flex align-items-stretch mb-4">
-              <div class="card bg-dark text-light w-100 py-4">
+              <div class="card text-light w-100 py-4">
                 <div class="card-body text-center">
                   <div class="h1 mb-4">
-                    <i class="bi bi-tools text-primary"></i>
+                    <i class="bi bi-tools"></i>
                   </div>
                   <h4 class="card-title mb-4">Tools</h4>
                   <ul class="skills-list text-start">
@@ -118,7 +147,7 @@
       </section>
 
       <section id="projects" class="py-sm-5 p-sm-5">
-        <h1 class="text-center text-light py-5">Projects</h1>
+        <h1 class="text-center text-dark py-5">Projects</h1>
         <div class="container">
           <div class="row g-4">
             <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
@@ -276,5 +305,6 @@
     </main>
     <footer></footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="src/assets/js/app.js"></script>
   </body>
 </html>
