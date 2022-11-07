@@ -1,5 +1,27 @@
 #hero{
+    position: relative;
     height: 90vh;
+}
+
+.wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 238px;
+}
+
+.wave1 .shape-fill {
+    fill: var(--main-color);
 }
 
 @media only screen and (max-width: 1024px){

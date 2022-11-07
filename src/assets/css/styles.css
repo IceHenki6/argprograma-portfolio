@@ -3,8 +3,10 @@
 }
 
 :root{
-    --main-color: #ab83e3;
-    --main-font-color: #e3e4e8;
+    /* --main-color: #ab83e3; */
+    --main-color: #c39ef7;
+    --main-font-color: #f8f9fa;
+    --font-dark: #212529;
 }
 
 .hidden{
@@ -47,11 +49,16 @@
 
 #about-me{
     height: 55vh;
+    background-color: var(--main-color);
 }
 
 .skills-list li::marker{
     color: var(--main-color);
     font-size: 1.4em;
+}
+
+#projects{
+    background-color: var(--main-color);
 }
 
 
@@ -60,18 +67,37 @@
 }
 
 
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wave2{
+    background-image: url(../images/wave2.svg);
+}
+
+.wave3{
+    background-image: url(../images/wave3.svg);
+}
+
 #academic-formation{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -30vh;
+    margin-bottom: -30vh
 }
 
 .education-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 10rem;
+    display: grid;
+
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    gap: 5rem;
 }
 
 .education-card{
@@ -79,8 +105,9 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-
-    width: 40%;
+    justify-content: center;
+    min-width: 100px;
+    width: 100%;
 }
 
 .education-img{
@@ -97,6 +124,11 @@
 @media only screen and (max-width: 1024px){
     .project-img{
         height: 170px;
+    }
+
+    #academic-formation{
+        margin-top: -10vh;
+        margin-bottom: -10vh;
     }
 }
 
