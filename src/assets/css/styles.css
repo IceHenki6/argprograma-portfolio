@@ -121,6 +121,10 @@
     margin-top: 1.5rem;
 }
 
+footer{
+    background-color: var(--main-color);
+}
+
 @media only screen and (max-width: 1024px){
     .project-img{
         height: 170px;
@@ -135,6 +139,21 @@
 @media only screen and (max-width: 500px){
     .project-img{
         height: 240px;
+    }
+
+    #academic-formation{
+        height: auto;
+
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .education-container{
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
     }
 }
 
